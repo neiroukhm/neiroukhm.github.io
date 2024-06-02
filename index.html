@@ -3,56 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mays Neiroukh - Creative Researcher</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Mays Neiroukh</h1>
-        <p>Creative Researcher in Deep Learning, Neuroscience, and Arabian Studies</p>
+        <div id="colorlib-page">
+            <aside id="colorlib-aside">
+                <div class="author-img" style="background-image: url(images/author.jpg);"></div>
+                <h1 id="colorlib-logo"><a href="index.html">Your Name</a></h1>
+                <span class="position">Web Developer</span>
+                <nav id="colorlib-main-menu">
+                    <ul>
+                        <li class="active"><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div id="colorlib-main">
+                <section id="colorlib-hero">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li style="background-image: url(images/img_bg_1.jpg);">
+                                <div class="overlay"></div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12 js-fullheight slider-text">
+                                            <div class="slider-text-inner js-fullheight">
+                                                <div class="desc animate-box">
+                                                    <h1>Hi! <br>I'm Your Name</h1>
+                                                    <h2>Web Developer</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="about">
+                    <div class="container-wrap">
+                        <div class="row">
+                            <div class="col-md-12 col-md-offset-1">
+                                <div class="about-desc">
+                                    <h2 class="colorlib-heading">About Me</h2>
+                                    <p class="animate-box">Short bio about yourself...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="projects">
+                    <div class="container-wrap">
+                        <div class="row">
+                            <div class="col-md-12 col-md-offset-1">
+                                <div class="projects-desc">
+                                    <h2 class="colorlib-heading">Projects</h2>
+                                    <div class="owl-carousel animate-box">
+                                        <div class="item">
+                                            <h3>Project Title</h3>
+                                            <p>Project description...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact">
+                    <div class="container-wrap">
+                        <div class="row">
+                            <div class="col-md-12 col-md-offset-1">
+                                <div class="contact-desc">
+                                    <h2 class="colorlib-heading">Contact</h2>
+                                    <form action="submit_form.php" method="post" class="animate-box">
+                                        <input type="text" name="name" placeholder="Your Name">
+                                        <input type="email" name="email" placeholder="Your Email">
+                                        <textarea name="message" placeholder="Your Message"></textarea>
+                                        <button type="submit">Send</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#resume">Resume</a></li>
-        </ul>
-    </nav>
-    <section id="home">
-        <h2>Welcome</h2>
-        <p>Welcome to my personal website where I share my research and creative projects in the fields of deep learning, neuroscience, and Arabian studies.</p>
-    </section>
-    <section id="research">
-        <h2>Research</h2>
-        <p>Here you will find details of my various research projects, including my work on brain's white matter fiber tracts and moth studies.</p>
-    </section>
-    <section id="publications">
-        <h2>Publications</h2>
-        <p>Check out my published papers and articles on Arabian studies and wine consumption in Pre-Islamic Arabia.</p>
-    </section>
-    <section id="blog">
-        <h2>Blog</h2>
-        <p>Read my latest blog posts where I share insights, progress updates, and thoughts on my current research.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me for collaboration or inquiries.</p>
-        <ul>
-            <li>Email: neiroukhm@carleton.edu</li>
-            <li>Phone: +1 (507) 581-3857</li>
-            <li><a href="https://linkedin.com/in/Mays-Neiroukh">LinkedIn</a></li>
-        </ul>
-    </section>
-    <section id="resume">
-        <h2>Resume</h2>
-        <iframe src="Mays-Neiroukh.resume.pdf" width="100%" height="600px"></iframe>
-    </section>
-    <footer>
-        <p>&copy; 2024 Mays Neiroukh</p>
-    </footer>
-    <script src="scripts.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
