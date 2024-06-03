@@ -1,4 +1,4 @@
-@import "nord.css";
+@import "node_modules/nord/src/nord.css";
 
 body {
   background-color: var(--nord0);
