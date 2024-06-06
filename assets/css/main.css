@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background:#071330;
+		background:#312450;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1915,7 +1915,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			background-color: #738FA7;
-			color:#071330 !important;
+			color:#312450 !important;
 		}
 
 			input[type="submit"].primary:after,
@@ -2356,7 +2356,7 @@ input, select, textarea {
 
 		select option {
 			color: #738FA7;
-			background:#071330;
+			background:#312450;
 		}
 
 		select:focus::-ms-value {
@@ -2525,7 +2525,7 @@ input, select, textarea {
 			display: block;
 			background: #738FA7;
 			border-radius: 100%;
-			color:#071330;
+			color:#312450;
 			text-align: center;
 			line-height: 2.5em;
 			margin: 0 0 1.3em 0;
@@ -2536,7 +2536,7 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: #071330;
+					color: #312450;
 				}
 
 				.wrapper.style1-alt .icon.major:before {
@@ -3524,7 +3524,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background:#071330;
+		background:#312450;
 		cursor: default;
 		height: 100vh;
 		left: 0;
