@@ -1,4 +1,4 @@
-@import url(fontawesome-all.min.css);
+e@import url(fontawesome-all.min.css);
 
 /*
 	Hyperspace by HTML5 UP
@@ -3765,10 +3765,10 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right,#f0ead6,#f0ead6);
-				background-image: -webkit-linear-gradient(to right,#f0ead6,#f0ead6);
-				background-image: -ms-linear-gradient(to right,#f0ead6,#f0ead6);
-				background-image: linear-gradient(to right,#f0ead6,#f0ead6);
+				background-image: -moz-linear-gradient(to right, #f0ead6, #f0ead6);
+				background-image: -webkit-linear-gradient(to right, #f0ead6, #f0ead6);
+				background-image: -ms-linear-gradient(to right, #f0ead6, #f0ead6);
+				background-image: linear-gradient(to right, #f0ead6, #f0ead6);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
