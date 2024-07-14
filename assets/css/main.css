@@ -500,7 +500,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, textarea, select {
-		font-family: "Source Sans Pro", "sans-serif";
+		font-family: "Roboto", "sans-serif";
 		font-weight: 300;
 		font-size: 18pt;
 		line-height: 1.75em;
@@ -691,7 +691,6 @@ input, select, textarea {
 			background-repeat: no-repeat;
 			text-indent: -10em;
 			overflow: hidden;
-			margin-top: 20px; /* Add this line */
 
 		}
 
@@ -761,10 +760,11 @@ input, select, textarea {
 				background-color: rgba(229, 230, 231, 0.375);
 			}
 
-			/* Move the button with class "button style2 down" down */
+			/* Move the button with class "button style2 down" down 
 			.button.style2.down {
     			margin-top: 120px;
 			}
+			*/
 			input[type="button"].style2.down,
 			input[type="submit"].style2.down,
 			input[type="reset"].style2.down,
