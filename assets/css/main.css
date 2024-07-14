@@ -760,11 +760,11 @@ input, select, textarea {
 				background-color: rgba(229, 230, 231, 0.375);
 			}
 
-			/* Move the button with class "button style2 down" down 
+			/* Move the button with class "button style2 down" down*/ 
 			.button.style2.down {
-    			margin-top: 120px;
+    			margin-top: 50px;
 			}
-			*/
+			
 			input[type="button"].style2.down,
 			input[type="submit"].style2.down,
 			input[type="reset"].style2.down,
