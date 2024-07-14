@@ -675,7 +675,6 @@ input, select, textarea {
 		position: relative;
 		text-align: center;
 		text-decoration: none;
-		margin-top: 10px; /* Add this line */
 	}
 
 		input[type="button"].down,
@@ -692,6 +691,8 @@ input, select, textarea {
 			background-repeat: no-repeat;
 			text-indent: -10em;
 			overflow: hidden;
+			margin-top: 10px; /* Add this line */
+
 		}
 
 			input[type="button"].down.anchored,
