@@ -675,6 +675,7 @@ input, select, textarea {
 		position: relative;
 		text-align: center;
 		text-decoration: none;
+		margin-top: 10px; /* Add this line */
 	}
 
 		input[type="button"].down,
