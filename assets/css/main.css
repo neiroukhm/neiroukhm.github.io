@@ -764,6 +764,7 @@ input, select, textarea {
 			.button.style2.down,
 			button.style2.down {
 				background-image: url("images/arrow.svg");
+				 margin-top: 10px; /* New added line */
 			}
 
 /* Form */
