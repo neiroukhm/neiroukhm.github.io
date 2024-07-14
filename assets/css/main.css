@@ -695,6 +695,7 @@ input, select, textarea {
 
 		}
 
+
 			input[type="button"].down.anchored,
 			input[type="submit"].down.anchored,
 			input[type="reset"].down.anchored,
@@ -760,13 +761,16 @@ input, select, textarea {
 				background-color: rgba(229, 230, 231, 0.375);
 			}
 
+			/* Move the button with class "button style2 down" down */
+			.button.style2.down {
+    			margin-top: 30px;
+			}
 			input[type="button"].style2.down,
 			input[type="submit"].style2.down,
 			input[type="reset"].style2.down,
 			.button.style2.down,
 			button.style2.down {
 				background-image: url("images/arrow.svg");
-				margin-top: 30px; /* New added line */
 			}
 
 /* Form */
