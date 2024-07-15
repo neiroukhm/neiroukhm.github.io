@@ -2185,7 +2185,7 @@ input, select, textarea {
 		margin: 0;
 		line-height: 1em;
 		padding: 1.5em;
-		background: #39454b;
+		background:#152238;
 		color: rgba(185, 186, 187, 0.5);
 		overflow: hidden;
 	}
@@ -2253,7 +2253,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
+		background-color: #152238;
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
