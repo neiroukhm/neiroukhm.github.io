@@ -1,145 +1,140 @@
 <!DOCTYPE HTML>
-<!--
-	This code is adapted from HTML5 UP
-
--->
+<!-- This code is adapted from HTML5 UP -->
 <html>
-	<head>
-		<title>Personal Website</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Personal Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<h1>Mays Neiroukh</h1>
-				<nav>
-					<ul>
-						<li><a href="#one">About Me</a></li>
-						<li><a href="#two">What I Do</a></li>
-						<li><a href="#work">Projects</a></li>
-						<li><a href="resume.pdf" target="_blank">Resume</a></li> 
-					</ul>
-				</nav>
-			</header>
+    <!-- Header -->
+    <header id="header">
+        <h1>Mays Neiroukh</h1>
+        <nav>
+            <ul>
+                <li><a href="#one">About Me</a></li>
+                <li><a href="#work">Projects</a></li>
+                <li><a href="resume.pdf" target="_blank">Resume</a></li> 
+            </ul>
+        </nav>
+    </header>
 
-		<!-- Intro -->
-			<section id="intro" class="main style1 dark fullscreen">
-				<div class="content">
-					<header>
-						<h2>Mays Neiroukh</h2>
-						<a href="#one" class="button style2 down">More</a>
-					</footer>
-				</div>
-			</section>
+    <!-- Intro -->
+    <section id="intro" class="main style1 dark fullscreen">
+        <div class="content">
+            <header>
+                <h2>Mays Neiroukh</h2>
+                <a href="#one" class="button style2 down">More</a>
+            </header>
+        </div>
+    </section>
 
-		<!-- One -->
-			<section id="one" class="main style2 right dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2>About me</h2>
-					</header>
-					<p>Hello! My name is Mays Neiroukh, and I am a senior majoring in computer science and minoring in mathematics at Carleton College in Minnesota.
-						I am very passionate about integrating my computational skills with biomedical engineering and plan to attend graduate school for biomedical engineering.
-						My hobbies include photography, playing badminton, and hosting my radio show.</p>
-				</div>
-				<a href="#two" class="button style2 down anchored">Next</a>
-			</section>
+    <!-- One -->
+    <section id="one" class="main style2 right dark fullscreen">
+        <div class="content box style2">
+            <header>
+                <h2>About me</h2>
+            </header>
+            <p>Hello! My name is Mays Neiroukh, and I am a senior majoring in computer science and minoring in mathematics at Carleton College in Minnesota. I am very passionate about integrating my computational skills with biomedical engineering and plan to attend graduate school for biomedical engineering. My hobbies include photography, playing badminton, and hosting my radio show.</p>
+        </div>
+        <a href="#work" class="button style2 down anchored">Next</a>
+    </section>
 
-		<!-- Two -deleted for now
-			<section id="two" class="main style2 left dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2>What I Do</h2>
-					</header>
-					<p>   </p>
-				</div>
-				<a href="#work" class="button style2 down anchored">Next</a>
-			</section>
-		-->
-		<!-- Resume -->
-			
+    <!-- Work -->
+    <section id="work" class="main style3 primary">
+        <div class="content">
+            <header>
+                <h2>Projects</h2>
+                <p>Here are some of the recent projects I have worked on.</p>
+            </header>
 
+            <!-- Gallery -->
+            <div class="gallery">
+                <article class="from-left">
+                    <a href="#modal01" class="image fit open-modal">
+                        <img src="images/thumbs/01.png" title="Leveraging Machine Learning in the Design of Novel Ionic Liquids" alt="" />
+                    </a>
+                </article>
+                <article class="from-right">
+                    <a href="#modal02" class="image fit open-modal">
+                        <img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" />
+                    </a>
+                </article>
+                <!-- Add more articles as needed -->
+            </div>
+        </div>
+    </section>
 
-		
-		<!-- Work -->
-			<section id="work" class="main style3 primary">
-				<div class="content">
-					<header>
-						<h2>Projects</h2>
-						<p>Here are some of the recents project I have worked on.</p>
-					</header>
+    <!-- Modal Structure -->
+    <div id="modal01" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="description">
+                <p>During my NSF-REU research internship, I had the opportunity to delve into the exciting field of machine learning to design novel ionic liquids. I played a crucial role in implementing and optimizing a Python-based codebase for data analysis, which significantly improved the efficiency and accuracy of property predictions. One of my major tasks involved comprehensive data preprocessing and cleaning for over 100,000 data points. Utilizing Python packages such as NumPy, Pandas, Matplotlib, and Scikit-learn, I was able to process and visualize complex data effectively. I also had the privilege of presenting my findings through presentations, a poster, and a research paper, further refining my scientific communication skills.</p>
+            </div>
+            <div class="skills">
+                <strong>Skills Applied:</strong>
+                <ul style="display: flex; flex-wrap: wrap; list-style: none; padding: 0;">
+                    <li style="margin-right: 15px;">Data Analysis</li>
+                    <li style="margin-right: 15px;">Machine Learning</li>
+                    <li style="margin-right: 15px;">Data Visualization</li>
+                    <li style="margin-right: 15px;">Scientific Communication</li>
+                    <li style="margin-right: 15px;">Python Programming</li>
+                    <li style="margin-right: 15px;">Data Preprocessing and Cleaning</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-					<!-- Gallery  -->
-						<div class="gallery">
-						    <article class="from-left">
-						        <a href="images/fulls/01.png" class="image fit">
-						            <img src="images/fulls/01.png" title="During my NSF-REU research internship, I had the opportunity to delve into the exciting field of machine learning to design novel ionic liquids. I played a crucial role in implementing and optimizing a Python-based codebase for data analysis, which significantly improved the efficiency and accuracy of property predictions. One of my major tasks involved comprehensive data preprocessing and cleaning for over 100,000 data points. Utilizing Python packages such as NumPy, Pandas, Matplotlib, and Scikit-learn, I was able to process and visualize complex data effectively. I also had the privilege of presenting my findings through presentations, a poster, and a research paper, further refining my scientific communication skills." alt="" />
-							    <div class="description">Leveraging Machine Learning in the Design of Novel Ionic Liquids</div>
-						        </a>
-						    </article>
-						    <article class="from-right">
-						        <a href="images/fulls/02.jpg" class="image fit">
-						            <img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" />
-						            <div class="description">Airchitecture II</div>
-						        </a>
-						    </article>
-						    <article class="from-left">
-						        <a href="images/fulls/03.jpg" class="image fit">
-						            <img src="images/thumbs/03.jpg" title="Air Lounge" alt="" />
-						            <div class="description">Air Lounge</div>
-						        </a>
-						    </article>
-						    <article class="from-right">
-						        <a href="images/fulls/04.jpg" class="image fit">
-						            <img src="images/thumbs/04.jpg" title="Carry on" alt="" />
-						            <div class="description">Carry on</div>
-						        </a>
-						    </article>
-						    <article class="from-left">
-						        <a href="images/fulls/05.jpg" class="image fit">
-						            <img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" />
-						            <div class="description">The sparkling shell</div>
-						        </a>
-						    </article>
-						    <article class="from-right">
-						        <a href="images/fulls/06.jpg" class="image fit">
-						            <img src="images/thumbs/06.jpg" title="Bent IX" alt="" />
-						            <div class="description">Bent IX</div>
-						        </a>
-						    </article>
-						</div>
-						</div>
-						</section>
-						
+    <!-- Add more modals as needed -->
 
-		<!-- Footer -->
-			<footer id="footer">
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="https://www.linkedin.com/in/mays-neiroukh/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+            <li><a href="mailto:neiroukhm@carleton.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="https://github.com/123mays" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+        </ul>
+    </footer>
 
-				<!-- Icons -->
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/mays-neiroukh/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="mailto:neiroukhm@carleton.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-   						<li><a href="https://github.com/123mays" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Modal functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            var modals = document.querySelectorAll('.modal');
+            var openButtons = document.querySelectorAll('.open-modal');
+            var closeButtons = document.querySelectorAll('.close-modal');
 
-				
-					
+            openButtons.forEach(function(button, index) {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    modals[index].style.display = 'block';
+                });
+            });
 
-			</footer>
+            closeButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    button.closest('.modal').style.display = 'none';
+                });
+            });
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+            window.addEventListener('click', function(event) {
+                if (event.target.classList.contains('modal')) {
+                    event.target.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
 </html>
