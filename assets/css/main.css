@@ -588,7 +588,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
-		color: #98c593;
+		color: #192841;
 	}
 
 	sub {
@@ -605,11 +605,11 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-top: solid 1px #e5e6e7;
+		border-top: solid 1px #ffffff;
 	}
 
 	blockquote {
-		border-left: solid 0.5em #e5e6e7;
+		border-left: solid 0.5em #ffffff;
 		padding: 1em 0 1em 2em;
 		font-style: italic;
 	}
@@ -622,7 +622,7 @@ input, select, textarea {
 
 	.box {
 		background: #ffffff;
-		color: #39454b;
+		color: #192841;
 		padding: 2em;
 	}
 
@@ -721,7 +721,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		.button:hover,
 		button:hover {
-			background-color: #a8cea4;
+			background-color: #192841;
 		}
 
 		input[type="button"]:active,
