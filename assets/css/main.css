@@ -592,7 +592,7 @@ strong, b {
 		-webkit-transition: color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
-		color: #98c593;
+		color: #192841;
 	}
 
 	sub {
@@ -666,7 +666,7 @@ strong, b {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: #98c593;
+		background-color: #192841;
 		border: 0;
 		border-radius: 3.5em;
 		color: #ffffff;
@@ -2070,7 +2070,7 @@ s;
 			}
 
 			.main.style3.secondary {
-				background: #f5f6f7;
+				background: #ffffff;
 			}
 
 		.main.dark {
@@ -2213,7 +2213,7 @@ s;
 		}
 
 			#footer a:hover {
-				color: #b9babb;
+				color: #ffffff;
 			}
 
 		#footer ul.menu {
@@ -2347,7 +2347,7 @@ s;
 }
 
 #footer a {
-  color: #98c593;
+  color: #192841;
   text-decoration: none;
 }
 
