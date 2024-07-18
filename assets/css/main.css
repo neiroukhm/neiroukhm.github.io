@@ -284,9 +284,7 @@ input, select, textarea {
 		}
 
 		99% {
-			-m
-
-oz-transform: scale(0.5) rotate(360deg);
+			-moz-transform: scale(0.5) rotate(360deg);
 			-webkit-transform: scale(0.5) rotate(360deg);
 			-ms-transform: scale(0.5) rotate(360deg);
 			transform: scale(0.5) rotate(360deg);
@@ -576,9 +574,7 @@ oz-transform: scale(0.5) rotate(360deg);
 
 	}
 
-	
-
-strong, b {
+	strong, b {
 		font-weight: 900;
 		color: inherit;
 	}
@@ -592,7 +588,7 @@ strong, b {
 		-webkit-transition: color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
-		color: #192841;
+		color: #98c593;
 	}
 
 	sub {
@@ -666,7 +662,7 @@ strong, b {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: #192841;
+		background-color: #98c593;
 		border: 0;
 		border-radius: 3.5em;
 		color: #ffffff;
@@ -879,9 +875,7 @@ strong, b {
 		border: solid 2px #e5e6e7;
 		color: inherit;
 		border-radius: 0.5em;
-		outline
-
-: none;
+		outline: none;
 	}
 
 		input[type="text"]:focus,
@@ -1159,16 +1153,16 @@ strong, b {
 					ul.actions:not(.fixed) li input[type="submit"],
 					ul.actions:not(.fixed) li input[type="reset"],
 					ul.actions:not(.fixed) li input[type="button"],
-					ul.actions.not(.fixed) li button,
-					ul.actions.not(.fixed) li .button {
+					ul.actions:not(.fixed) li button,
+					ul.actions:not(.fixed) li .button {
 						width: 100%;
 					}
 
-						ul.actions.not(.fixed) li input[type="submit"].icon:before,
-						ul.actions.not(.fixed) li input[type="reset"].icon:before,
-						ul.actions.not(.fixed) li input[type="button"].icon:before,
-						ul.actions.not(.fixed) li button.icon:before,
-						ul.actions.not(.fixed) li .button.icon:before {
+						ul.actions:not(.fixed) li input[type="submit"].icon:before,
+						ul.actions:not(.fixed) li input[type="reset"].icon:before,
+						ul.actions:not(.fixed) li input[type="button"].icon:before,
+						ul.actions:not(.fixed) li button.icon:before,
+						ul.actions:not(.fixed) li .button.icon:before {
 							margin-left: -0.5rem;
 						}
 
@@ -1251,9 +1245,7 @@ strong, b {
 		box-sizing: content-box;
 		background: #fff;
 		padding-bottom: 3em;
-		box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0
-
-.15);
+		box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
 	}
 
 		.poptrox-popup .loader {
@@ -1513,9 +1505,7 @@ strong, b {
 			.gallery article:nth-last-child(4n) {
 				-moz-transition-delay: 0.2s;
 				-webkit-transition-delay: 0.2s;
-				-ms-transition-delay: 0.2
-
-s;
+				-ms-transition-delay: 0.2s;
 				transition-delay: 0.2s;
 			}
 
@@ -1740,9 +1730,7 @@ s;
 				-moz-transition-delay: 1s;
 				-webkit-transition-delay: 1s;
 				-ms-transition-delay: 1s;
-				transition-delay
-
-: 1s;
+				transition-delay: 1s;
 			}
 
 			.gallery article:nth-last-child(21n) {
@@ -2042,9 +2030,7 @@ s;
 
 			.main.style2.inactive.left > .content {
 				-moz-transform: translateX(-100%);
-				-webkit
-
--transform: translateX(-100%);
+				-webkit-transform: translateX(-100%);
 				-ms-transform: translateX(-100%);
 				transform: translateX(-100%);
 			}
@@ -2070,7 +2056,7 @@ s;
 			}
 
 			.main.style3.secondary {
-				background: #ffffff;
+				background: #f5f6f7;
 			}
 
 		.main.dark {
@@ -2213,7 +2199,7 @@ s;
 		}
 
 			#footer a:hover {
-				color: #ffffff;
+				color: #b9babb;
 			}
 
 		#footer ul.menu {
@@ -2333,61 +2319,3 @@ s;
 			}
 
 		}
-
-#footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  font-size: 14px;
-  padding: 10px 0;
-}
-
-#footer a {
-  color: #192841;
-  text-decoration: none;
-}
-
-#footer a:hover {
-  text-decoration: underline;
-}
-/* Add this to the end of your CSS file */
-
-/* Modal styles */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 10000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 60px;
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-.close-modal {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close-modal:hover,
-.close-modal:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
