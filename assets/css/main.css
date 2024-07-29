@@ -504,7 +504,7 @@ input, select, textarea {
 		font-weight: 300;
 		font-size: 18pt;
 		line-height: 1.75em;
-		color: #9ac8e9;
+		color: #254e58;
 		letter-spacing: 0.025em;
 	}
 
@@ -886,7 +886,7 @@ input, select, textarea {
 		input[type="url"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #9ac8e9;
+			border-color: #254e58;
 		}
 
 	input[type="text"],
@@ -2185,7 +2185,7 @@ input, select, textarea {
 		margin: 0;
 		line-height: 1em;
 		padding: 1.5em;
-		background:#9ac8e9;
+		background:#254e58;
 		color: rgba(185, 186, 187, 0.5);
 		overflow: hidden;
 	}
@@ -2263,7 +2263,7 @@ input, select, textarea {
 /* One */
 
 	#one {
-		background-color: #9ac8e9;
+		background-color: #254e58;
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
