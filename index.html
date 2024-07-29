@@ -1,147 +1,93 @@
 <!DOCTYPE HTML>
-<!--
-	This code is adapted from HTML5 UP
-
--->
 <html>
-	<head>
-		<title>Personal Website</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" href="images/main-logo-white-transparent.png" type="image/png" />
+<head>
+    <title>Personal Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="icon" href="images/main-logo-white-transparent.png" type="image/png" />
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+        <h1>Mays Neiroukh</h1>
+        <nav>
+            <ul>
+                <li><a href="#one">About Me</a></li>
+                <li><a href="#two">What I Do</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="resume.pdf" target="_blank">Resume</a></li> 
+            </ul>
+        </nav>
+    </header>
 
-	</head>
-	<body class="is-preload">
+    <!-- Intro -->
+    <section id="intro" class="main style1 dark fullscreen">
+        <div class="content">
+            <header>
+                <h2>Mays Neiroukh</h2>
+                <a href="#one" class="button style2 down">More</a>
+            </header>
+        </div>
+    </section>
 
-		<!-- Header -->
-			<header id="header">
-				<h1>Mays Neiroukh</h1>
-				<nav>
-					<ul>
-						<li><a href="#one">About Me</a></li>
-						<li><a href="#two">What I Do</a></li>
-						<li><a href="#work">Projects</a></li>
-						<li><a href="resume.pdf" target="_blank">Resume</a></li> 
-					</ul>
-				</nav>
-			</header>
+    <!-- One -->
+    <section id="one" class="main style2 right dark fullscreen">
+        <div class="content box style2">
+            <header>
+                <h2>About me</h2>
+            </header>
+            <p>Hello! My name is Mays Neiroukh, and I am a senior majoring in computer science and minoring in mathematics at Carleton College in Minnesota.
+                I am very passionate about integrating my computational skills with biomedical engineering and plan to attend graduate school for biomedical engineering.
+                My hobbies include photography, playing badminton, and hosting my radio show.</p>
+        </div>
+        <a href="#portfolio" class="button style2 down anchored">Next</a>
+    </section>
 
-		<!-- Intro -->
-			<section id="intro" class="main style1 dark fullscreen">
-				<div class="content">
-					<header>
-						<h2>Mays Neiroukh</h2>
-						<a href="#one" class="button style2 down">More</a>
-					</footer>
-				</div>
-			</section>
+    <!-- Portfolio -->
+    <section id="portfolio" class="main style3 primary">
+        <div class="container">
+            <header>
+                <h2>Projects</h2>
+                <p>Here are some of the recent projects I have worked on.</p>
+            </header>
+            <div class="row">
+                <!-- Portfolio Item 1 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="images/fulls/01.png" alt="Project Image" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Project Title 1</div>
+                        <div class="portfolio-caption-subheading text-muted">Project Subtitle</div>
+                    </div>
+                </div>
+                <!-- Repeat for other portfolio items -->
+            </div>
+        </div>
+    </section>
 
-		<!-- One -->
-			<section id="one" class="main style2 right dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2>About me</h2>
-					</header>
-					<p>Hello! My name is Mays Neiroukh, and I am a senior majoring in computer science and minoring in mathematics at Carleton College in Minnesota.
-						I am very passionate about integrating my computational skills with biomedical engineering and plan to attend graduate school for biomedical engineering.
-						My hobbies include photography, playing badminton, and hosting my radio show.</p>
-				</div>
-				<a href="#two" class="button style2 down anchored">Next</a>
-			</section>
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="https://www.linkedin.com/in/mays-neiroukh/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+            <li><a href="mailto:neiroukhm@carleton.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="https://github.com/123mays" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+        </ul>
+    </footer>
 
-		<!-- Two -deleted for now
-			<section id="two" class="main style2 left dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2>What I Do</h2>
-					</header>
-					<p>   </p>
-				</div>
-				<a href="#work" class="button style2 down anchored">Next</a>
-			</section>
-		-->
-		<!-- Resume -->
-			
-
-
-		
-		<!-- Work -->
-			<section id="work" class="main style3 primary">
-				<div class="content">
-					<header>
-						<h2>Projects</h2>
-						<p>Here are some of the recents project I have worked on.</p>
-					</header>
-
-					<!-- Gallery  -->
-						<div class="gallery">
-						    <article class="from-left">
-						        <a href="images/fulls/01.png" class="image fit">
-						            <img src="images/fulls/01.png" title="During my NSF-REU research internship, I had the opportunity to delve into the exciting field of machine learning to design novel ionic liquids. I played a crucial role in implementing and optimizing a Python-based codebase for data analysis, which significantly improved the efficiency and accuracy of property predictions. One of my major tasks involved comprehensive data preprocessing and cleaning for over 100,000 data points. Utilizing Python packages such as NumPy, Pandas, Matplotlib, and Scikit-learn, I was able to process and visualize complex data effectively. I also had the privilege of presenting my findings through presentations, a poster, and a research paper, further refining my scientific communication skills." alt="" />
-							    <div class="description">Leveraging Machine Learning in the Design of Novel Ionic Liquids</div>
-						        </a>
-						    </article>
-						    <article class="from-right">
-						        <a href="images/fulls/02.jpg" class="image fit">
-						            <img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" />
-						            <div class="description">Airchitecture II</div>
-						        </a>
-						    </article>
-						    <article class="from-left">
-						        <a href="images/fulls/03.jpg" class="image fit">
-						            <img src="images/thumbs/03.jpg" title="Air Lounge" alt="" />
-						            <div class="description">Air Lounge</div>
-						        </a>
-						    </article>
-						    <article class="from-right">
-						        <a href="images/fulls/04.jpg" class="image fit">
-						            <img src="images/thumbs/04.jpg" title="Carry on" alt="" />
-						            <div class="description">Carry on</div>
-						        </a>
-						    </article>
-						    <article class="from-left">
-						        <a href="images/fulls/05.jpg" class="image fit">
-						            <img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" />
-						            <div class="description">The sparkling shell</div>
-						        </a>
-						    </article>
-						    <article class="from-right">
-						        <a href="images/fulls/06.jpg" class="image fit">
-						            <img src="images/thumbs/06.jpg" title="Bent IX" alt="" />
-						            <div class="description">Bent IX</div>
-						        </a>
-						    </article>
-						</div>
-						</div>
-						</section>
-						
-
-		<!-- Footer -->
-			<footer id="footer">
-
-				<!-- Icons -->
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/mays-neiroukh/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="mailto:neiroukhm@carleton.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-   						<li><a href="https://github.com/123mays" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-
-				
-					
-
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Include Bootstrap JS and Custom JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
 </html>
