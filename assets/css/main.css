@@ -2322,6 +2322,12 @@ input, select, textarea {
     line-height: 2.5rem;
   }
 }
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 
 /* Contact */
