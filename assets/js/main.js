@@ -247,15 +247,24 @@
 		.on('load', function() {
 			$window.trigger('resize');
 		});
-
+	
 	// Portfolio hover effect.
-	$('.portfolio-item').hover(
-		function() {
-			$(this).find('.portfolio-item-caption').fadeIn(200);
-		},
-		function() {
-			$(this).find('.portfolio-item-caption').fadeOut(200);
-		}
-	);
+    $('.portfolio-item').hover(
+        function() {
+            $(this).find('.portfolio-hover').fadeIn(200);
+        },
+        function() {
+            $(this).find('.portfolio-hover').fadeOut(200);
+        }
+    );
+
+    // Initialize Bootstrap modals (if not already initialized).
+    $(document).ready(function() {
+        $('.portfolio-link').click(function(e) {
+            e.preventDefault();
+            var targetModal = $(this).attr('href');
+            $(targetModal).modal('show');
+        });
+    });
 
 })(jQuery);
