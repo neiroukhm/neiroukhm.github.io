@@ -2287,7 +2287,6 @@ input, select, textarea {
   border-radius: 0.5rem;
   overflow: hidden;
 }
-
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
   top: 0;
@@ -2296,11 +2295,9 @@ input, select, textarea {
   opacity: 0;
   background-color: rgba(26, 188, 156, 0.9);
 }
-
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
 }
-
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;
 }
@@ -2310,25 +2307,16 @@ input, select, textarea {
   font-size: 2rem;
   padding: 1rem;
 }
-
 .portfolio-modal .portfolio-modal-title {
   font-size: 2.25rem;
   line-height: 2rem;
 }
-
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
     font-size: 3rem;
     line-height: 2.5rem;
   }
 }
-.portfolio-item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
 
 /* Contact */
 
