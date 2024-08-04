@@ -216,4 +216,24 @@
 				$window.trigger('resize');
 			});
 
+		$(document).ready(function() {
+		    $('.portfolio .gallery article').on('click', function() {
+		        $(this).find('.long-description').slideToggle();
+		    });
+		
+		    $('.portfolio .gallery').poptrox({
+		        baseZIndex: 10001,
+		        useBodyOverflow: false,
+		        usePopupEasyClose: true,
+		        overlayColor: '#1f2328',
+		        overlayOpacity: 0.75,
+		        usePopupCaption: true,
+		        popupCloserText: '',
+		        popupLoaderText: '',
+		        windowMargin: 50,
+		        usePopupDefaultStyling: false,
+		        usePopupNav: true
+		    });
+		});
+
 })(jQuery);
