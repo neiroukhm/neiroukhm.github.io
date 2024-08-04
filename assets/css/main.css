@@ -2278,7 +2278,7 @@ input, select, textarea {
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
-/* Portfolio*/
+/* Portfolio 
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
@@ -2316,7 +2316,7 @@ input, select, textarea {
     font-size: 3rem;
     line-height: 2.5rem;
   }
-}
+} */
 
 /* Contact */
 
