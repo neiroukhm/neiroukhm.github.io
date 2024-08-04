@@ -249,22 +249,8 @@
 		});
 	
 	// Portfolio hover effect.
-    $('.portfolio-item').hover(
-        function() {
-            $(this).find('.portfolio-hover').fadeIn(200);
-        },
-        function() {
-            $(this).find('.portfolio-hover').fadeOut(200);
-        }
-    );
+    
 
-    // Initialize Bootstrap modals (if not already initialized).
-    $(document).ready(function() {
-        $('.portfolio-link').click(function(e) {
-            e.preventDefault();
-            var targetModal = $(this).attr('href');
-            $(targetModal).modal('show');
-        });
-    });
+ 
 
 })(jQuery);
