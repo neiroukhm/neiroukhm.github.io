@@ -215,11 +215,11 @@
     $(document).ready(function() {
         // Toggle long description on article click
         $('.portfolio .gallery article').on('click', function(event) {
-            event.stopPropagation();  // Prevent the event from propagating to the image click handler
+            event.preventDefault(); // Prevent default action for the article click
             $(this).find('.long-description').slideToggle();
         });
 
-        // Initialize Poptrox for the portfolio gallery
+        // Initialize Poptrox for the portfolio gallery images only
         $('.portfolio .gallery a.image').poptrox({
             baseZIndex: 10001,
             useBodyOverflow: false,
