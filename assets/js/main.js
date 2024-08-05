@@ -213,8 +213,25 @@
 
     // Document ready
     $(document).ready(function() {
-        $('.portfolio .gallery article').on('click', function() {
+        // Toggle long description on article click
+        $('.portfolio .gallery article').on('click', function(event) {
+            event.stopPropagation();  // Prevent the event from propagating to the image click handler
             $(this).find('.long-description').slideToggle();
+        });
+
+        // Initialize Poptrox for the portfolio gallery
+        $('.portfolio .gallery a.image').poptrox({
+            baseZIndex: 10001,
+            useBodyOverflow: false,
+            usePopupEasyClose: true,
+            overlayColor: '#1f2328',
+            overlayOpacity: 0.75,
+            usePopupDefaultStyling: false,
+            usePopupCaption: true,
+            popupCloserText: '',
+            popupLoaderText: '',
+            windowMargin: 50,
+            usePopupNav: true
         });
     });
 
