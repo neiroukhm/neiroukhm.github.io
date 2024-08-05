@@ -2280,20 +2280,6 @@ input, select, textarea {
 		background-position: top left, center center;
 	}
 /* Portfolio Styles */
-	.portfolio {
-	    display: flex;
-	    flex-wrap: wrap;
-	    justify-content: center;
-	    margin-top: 2em;
-	}
-	
-	.portfolio .gallery {
-	    display: flex;
-	    flex-wrap: wrap;
-	    justify-content: center;
-	    width: 100%;
-	}
-	
 	.portfolio .gallery article {
 	    width: 45%;
 	    margin: 1em;
@@ -2302,6 +2288,7 @@ input, select, textarea {
 	    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	    overflow: hidden;
 	    transition: transform 0.3s ease-in-out;
+	    cursor: pointer;
 	}
 	
 	.portfolio .gallery article:hover {
@@ -2336,7 +2323,9 @@ input, select, textarea {
 	.portfolio .gallery article .long-description {
 	    padding: 0 1em 1em 1em;
 	    color: #39454b;
+	    display: none; /* Ensure it's hidden initially */
 	}
+
 
 /* Contact */
 
