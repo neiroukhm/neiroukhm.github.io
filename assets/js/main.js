@@ -181,32 +181,10 @@
 
     // Document ready
     $(document).ready(function() {
-        // Toggle long description on article click, excluding image clicks
+        // Toggle long description on article click
         $('.portfolio .gallery article').on('click', function(event) {
-            if (!$(event.target).closest('a.image').length) {
-                event.preventDefault(); // Prevent default action for the article click
-                $(this).find('.long-description').slideToggle();
-            }
-        });
-
-        // Initialize Poptrox for the portfolio gallery images only
-        $('.portfolio .gallery a.image').poptrox({
-            baseZIndex: 10001,
-            useBodyOverflow: false,
-            usePopupEasyClose: true,
-            overlayColor: '#1f2328',
-            overlayOpacity: 0.75,
-            usePopupDefaultStyling: false,
-            usePopupCaption: true,
-            popupCloserText: '',
-            popupLoaderText: '',
-            windowMargin: 50,
-            usePopupNav: true
-        });
-
-        // Prevent article click from triggering image lightbox
-        $('.portfolio .gallery a.image').on('click', function(event) {
-            event.stopPropagation();
+            event.preventDefault(); // Prevent default action for the article click
+            $(this).find('.long-description').slideToggle();
         });
     });
 
