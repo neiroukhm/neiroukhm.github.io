@@ -26,7 +26,6 @@
     if (browser.mobile)
         $body.addClass('is-touch');
     else {
-
         breakpoints.on('<=small', function() {
             $body.addClass('is-touch');
         });
@@ -34,45 +33,35 @@
         breakpoints.on('>small', function() {
             $body.removeClass('is-touch');
         });
-
     }
 
     // Fix: IE flexbox fix.
     if (browser.name == 'ie') {
-
         var $main = $('.main.fullscreen'),
             IEResizeTimeout;
 
-        $window
-            .on('resize.ie-flexbox-fix', function() {
+        $window.on('resize.ie-flexbox-fix', function() {
+            clearTimeout(IEResizeTimeout);
 
-                clearTimeout(IEResizeTimeout);
+            IEResizeTimeout = setTimeout(function() {
+                var wh = $window.height();
 
-                IEResizeTimeout = setTimeout(function() {
+                $main.each(function() {
+                    var $this = $(this);
 
-                    var wh = $window.height();
+                    $this.css('height', '');
 
-                    $main.each(function() {
-
-                        var $this = $(this);
-
-                        $this.css('height', '');
-
-                        if ($this.height() <= wh)
-                            $this.css('height', (wh - 50) + 'px');
-
-                    });
-
+                    if ($this.height() <= wh)
+                        $this.css('height', (wh - 50) + 'px');
                 });
 
-            })
-            .triggerHandler('resize.ie-flexbox-fix');
+            });
 
+        }).triggerHandler('resize.ie-flexbox-fix');
     }
 
     // Gallery.
     $window.on('load', function() {
-
         var $gallery = $('.gallery');
 
         $gallery.poptrox({
@@ -101,122 +90,103 @@
                 $(this)[0]._poptrox.windowMargin = 5;
             });
         });
-
     });
 
     // Section transitions.
     if (browser.canUse('transition')) {
-
         var on = function() {
-
             // Galleries.
-            $('.gallery')
-                .scrollex({
-                    top: '30vh',
-                    bottom: '30vh',
-                    delay: 50,
-                    initialize: function() { $(this).addClass('inactive'); },
-                    terminate: function() { $(this).removeClass('inactive'); },
-                    enter: function() { $(this).removeClass('inactive'); },
-                    leave: function() { $(this).addClass('inactive'); }
-                });
+            $('.gallery').scrollex({
+                top: '30vh',
+                bottom: '30vh',
+                delay: 50,
+                initialize: function() { $(this).addClass('inactive'); },
+                terminate: function() { $(this).removeClass('inactive'); },
+                enter: function() { $(this).removeClass('inactive'); },
+                leave: function() { $(this).addClass('inactive'); }
+            });
 
             // Generic sections.
-            $('.main.style1')
-                .scrollex({
-                    mode: 'middle',
-                    delay: 100,
-                    initialize: function() { $(this).addClass('inactive'); },
-                    terminate: function() { $(this).removeClass('inactive'); },
-                    enter: function() { $(this).removeClass('inactive'); },
-                    leave: function() { $(this).addClass('inactive'); }
-                });
+            $('.main.style1').scrollex({
+                mode: 'middle',
+                delay: 100,
+                initialize: function() { $(this).addClass('inactive'); },
+                terminate: function() { $(this).removeClass('inactive'); },
+                enter: function() { $(this).removeClass('inactive'); },
+                leave: function() { $(this).addClass('inactive'); }
+            });
 
-            $('.main.style2')
-                .scrollex({
-                    mode: 'middle',
-                    delay: 100,
-                    initialize: function() { $(this).addClass('inactive'); },
-                    terminate: function() { $(this).removeClass('inactive'); },
-                    enter: function() { $(this).removeClass('inactive'); },
-                    leave: function() { $(this).addClass('inactive'); }
-                });
+            $('.main.style2').scrollex({
+                mode: 'middle',
+                delay: 100,
+                initialize: function() { $(this).addClass('inactive'); },
+                terminate: function() { $(this).removeClass('inactive'); },
+                enter: function() { $(this).removeClass('inactive'); },
+                leave: function() { $(this).addClass('inactive'); }
+            });
 
             // Contact.
-            $('#contact')
-                .scrollex({
-                    top: '50%',
-                    delay: 50,
-                    initialize: function() { $(this).addClass('inactive'); },
-                    terminate: function() { $(this).removeClass('inactive'); },
-                    enter: function() { $(this).removeClass('inactive'); },
-                    leave: function() { $(this).addClass('inactive'); }
-                });
-
+            $('#contact').scrollex({
+                top: '50%',
+                delay: 50,
+                initialize: function() { $(this).addClass('inactive'); },
+                terminate: function() { $(this).removeClass('inactive'); },
+                enter: function() { $(this).removeClass('inactive'); },
+                leave: function() { $(this).addClass('inactive'); }
+            });
         };
 
         var off = function() {
-
             // Galleries.
-            $('.gallery')
-                .unscrollex();
+            $('.gallery').unscrollex();
 
             // Generic sections.
-            $('.main.style1')
-                .unscrollex();
-
-            $('.main.style2')
-                .unscrollex();
+            $('.main.style1').unscrollex();
+            $('.main.style2').unscrollex();
 
             // Contact.
-            $('#contact')
-                .unscrollex();
-
+            $('#contact').unscrollex();
         };
 
         breakpoints.on('<=small', off);
         breakpoints.on('>small', on);
-
     }
 
     // Events.
     var resizeTimeout, resizeScrollTimeout;
 
-    $window
-        .on('resize', function() {
+    $window.on('resize', function() {
+        // Disable animations/transitions.
+        $body.addClass('is-resizing');
 
-            // Disable animations/transitions.
-            $body.addClass('is-resizing');
+        clearTimeout(resizeTimeout);
 
-            clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function() {
+            // Update scrolly links.
+            $('a[href^="#"]').scrolly({
+                speed: 1500,
+                offset: $header.outerHeight() - 1
+            });
 
-            resizeTimeout = setTimeout(function() {
+            // Re-enable animations/transitions.
+            setTimeout(function() {
+                $body.removeClass('is-resizing');
+                $window.trigger('scroll');
+            }, 0);
+        }, 100);
 
-                // Update scrolly links.
-                $('a[href^="#"]').scrolly({
-                    speed: 1500,
-                    offset: $header.outerHeight() - 1
-                });
-
-                // Re-enable animations/transitions.
-                setTimeout(function() {
-                    $body.removeClass('is-resizing');
-                    $window.trigger('scroll');
-                }, 0);
-
-            }, 100);
-
-        })
-        .on('load', function() {
-            $window.trigger('resize');
-        });
+    }).on('load', function() {
+        $window.trigger('resize');
+    });
 
     // Document ready
     $(document).ready(function() {
-        // Toggle long description on article click
+        // Toggle long description on article click, excluding image clicks
         $('.portfolio .gallery article').on('click', function(event) {
-            event.preventDefault(); // Prevent default action for the article click
-            $(this).find('.long-description').slideToggle();
+            if (!$(event.target).closest('a.image').length) {
+                event.preventDefault(); // Prevent default action for the article click
+                $(this).find('.long-description').slideToggle();
+            }
         });
 
         // Initialize Poptrox for the portfolio gallery images only
@@ -232,6 +202,11 @@
             popupLoaderText: '',
             windowMargin: 50,
             usePopupNav: true
+        });
+
+        // Prevent article click from triggering image lightbox
+        $('.portfolio .gallery a.image').on('click', function(event) {
+            event.stopPropagation();
         });
     });
 
