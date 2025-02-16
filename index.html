@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Website</title>
+
+  <!-- ======================
+       Embedded CSS Styles
+       ====================== -->
+  <style>
+    /* 
+      Define your color palette from the attached image as CSS variables.
+      You can then reuse them throughout the page for easy theming.
+    */
+    :root {
+      --color1: #A9D09E; /* Light green */
+      --color2: #84AF78; /* Medium green */
+      --color3: #1C342C; /* Dark green */
+      --color4: #E5EFD0; /* Pale green */
+      --color5: #F6860C; /* Orange accent */
+      --color6: #435D4D; /* Muted green */
+      --color7: #5D6F57; /* Olive green */
+      --color8: #84A3A6; /* Grayish green-blue */
+      --color9: #526B66; /* Darker green-blue */
+    }
+
+    /* Reset some default margins/padding for a cleaner look */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Arial", sans-serif;
+      line-height: 1.5;
+      background-color: var(--color4);
+      color: var(--color3);
+    }
+
+    header {
+      background-color: var(--color3);
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+
+    /* Main container for the React app */
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 1rem auto;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Internal navigation menu */
+    .internal-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin: 1.5rem 0;
+      background-color: var(--color2);
+      padding: 1rem;
+      border-radius: 4px;
+    }
+
+    .internal-nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .internal-nav a:hover {
+      color: var(--color5); /* Orange accent on hover */
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--color3);
+      border-bottom: 3px solid var(--color1);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+
+    section p {
+      margin-bottom: 1rem;
+      color: var(--color9);
+    }
+
+    /* Story-specific styling */
+    .highlight {
+      color: var(--color5);
+      font-weight: bold;
+    }
+
+    .story-blockquote {
+      background-color: var(--color1);
+      border-left: 6px solid var(--color3);
+      padding: 1rem;
+      font-style: italic;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+
+    /* Make images or any wide content responsive */
+    img, video, iframe {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Simple responsive behavior for smaller screens */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .internal-nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Coding Journey</h1>
+    <p>From a curious mind to a passionate web developer</p>
+  </header>
+
+  <!-- The main container where our React App will be rendered -->
+  <div class="container" id="root"></div>
+
+  <!-- ================
+       React and ReactDOM (CDN)
+       ================ -->
+  <script
+    src="https://unpkg.com/react@18/umd/react.production.min.js"
+    crossorigin
+  ></script>
+  <script
+    src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    crossorigin
+  ></script>
+
+  <!-- =====================
+       Our React Application
+       ===================== -->
+  <script type="text/javascript">
+    const { useState } = React;
+
+    function App() {
+      return (
+        <main>
+          {/* Internal Navigation */}
+          <nav className="internal-nav">
+            <a href="#introduction">Introduction</a>
+            <a href="#journey">My Journey</a>
+            <a href="#skills">Skills &amp; Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          {/* Introduction Section */}
+          <section id="introduction">
+            <h2>Introduction</h2>
+            <p>
+              Hello! I’m <span className="highlight">[Your Name]</span>, a
+              dedicated web developer who loves crafting immersive and
+              user-friendly experiences on the web. My goal is to create
+              beautiful, responsive, and high-performance applications using
+              modern technologies like <strong>React</strong>,{" "}
+              <strong>HTML</strong>, and <strong>CSS</strong>.
+            </p>
+          </section>
+
+          {/* Journey Section */}
+          <section id="journey">
+            <h2>My Journey</h2>
+            <p>
+              My path to becoming a developer started with an intense curiosity
+              about how websites worked. I vividly remember inspecting the
+              source code of my favorite sites, tweaking little details, and
+              marveling at how simple changes could create entirely new
+              experiences.
+            </p>
+            <div className="story-blockquote">
+              “From my very first <em>console.log("Hello, World!")</em>,
+              I knew this was the beginning of a lifelong passion.”
+            </div>
+            <p>
+              Over time, I immersed myself in tutorials, projects, and coding
+              challenges. With each step, my love for web development grew, and
+              I discovered how fulfilling it is to build things that help people
+              or bring them joy.
+            </p>
+          </section>
+
+          {/* Skills & Projects Section */}
+          <section id="skills">
+            <h2>Skills &amp; Projects</h2>
+            <p>
+              Through my journey, I’ve developed a strong set of skills that
+              help me bring ideas to life on the web:
+            </p>
+            <ul>
+              <li>HTML5 &amp; CSS3 for semantic, accessible, and responsive layouts</li>
+              <li>React.js for building modular, state-driven user interfaces</li>
+              <li>JavaScript (ES6+) for dynamic, interactive client-side experiences</li>
+              <li>Node.js &amp; Express for backend APIs</li>
+            </ul>
+            <p>
+              I’ve built numerous projects, including:
+            </p>
+            <ol>
+              <li>A dynamic to-do list application with drag-and-drop functionality</li>
+              <li>A weather dashboard that fetches real-time data from public APIs</li>
+              <li>A responsive portfolio showcasing interactive design and animations</li>
+            </ol>
+          </section>
+
+          {/* Contact Section */}
+          <section id="contact">
+            <h2>Contact</h2>
+            <p>
+              I’m always excited to discuss new projects or creative ideas! Feel
+              free to reach out via:
+            </p>
+            <ul>
+              <li>
+                Email:{" "}
+                <a href="mailto:youremail@example.com">youremail@example.com</a>
+              </li>
+              <li>
+                LinkedIn:{" "}
+                <a
+                  href="https://linkedin.com/in/yourprofile"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  My LinkedIn
+                </a>
+              </li>
+              <li>
+                GitHub:{" "}
+                <a
+                  href="https://github.com/yourusername"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  My GitHub
+                </a>
+              </li>
+            </ul>
+            <p>Let’s build something amazing together!</p>
+          </section>
+        </main>
+      );
+    }
+
+    // React 18 way of rendering
+    const container = document.getElementById("root");
+    const root = ReactDOM.createRoot(container);
+    root.render(<App />);
+  </script>
+</body>
+</html>
